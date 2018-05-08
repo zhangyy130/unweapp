@@ -1,0 +1,27 @@
+<view bindtouchstart="canShow">
+    <view class="title">
+        <image class="title-pic" mode="widthFix" src="../../images/index/title.svg"></image>
+        <text class="sub-desc">{{index_time}} 更新实时PE</text>
+    </view>
+    <view class="stock-list">
+        <navigator class="stock-item" openType="navigate" url="/pages/stock_detail/stock_detail?id={{item.indexno_id}}" wx:for="{{list}}">
+            <view class="stock-name">
+                <text class="name">{{item.stock_name}}</text>
+                <text class="rank-info">实时PE {{item.pe}}<text class="line">|</text>历史排位 {{item.rank}}%</text>
+            </view>
+            <view class="stock-info">
+                <text class="stock-exponent">{{item.aniu_fundname}}</text>
+                <text class="advice {{item.color}}">{{item.petext}}</text>
+            </view>
+            <view class="detail">详情</view>
+        </navigator>
+    </view>
+    <view class="explain">
+        <text>*采用近10年数据计算，若不满10年则采用全部历史数据。其中标普500，纳指100采用2011年起数据，德国DAX30采用2015年起数据。</text>
+        <text>*PE采用滚动市盈率（PE-TTM），用来衡量指数估值，一般仅用于和自身历史比较，数值越低代表越被低估。</text>
+        <text>*历史排位是统计学指标，用来表明当前PE值在历史区间所处的位置。如80%，代表比历史上80%的时候都高。</text>
+        <text>*由「阿牛定投」提供支持。</text>
+    </view>
+    <button bindtap="gotoKefu" class="invest-btn">如何一键定投</button>
+    <base-modal from="{{from}}" hidden="{{hidden}}" modalTitle="提示"></base-modal>
+</view>

@@ -1,0 +1,61 @@
+.guide-container {
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.guide-container text,.guide-container view {
+    display: block;
+}
+
+.main-title {
+    margin: 35rpx 35rpx 20rpx;
+    font-size: 30rpx;
+    color: #555;
+}
+
+.method-con {
+    margin: 0 35rpx;
+    background-color: #fff;
+    padding: 36rpx 51rpx;
+}
+
+.method-con:first-of-type {
+    padding-bottom: 10rpx;
+}
+
+.method-con:first-of-type {
+    border-bottom: 1px solid #eee;
+}
+
+.method-con .method-title {
+    color: #000;
+    font-size: 30rpx;
+    font-weight: bold;
+}
+
+.method-con .method-desc {
+    color: #999;
+    font-size: 26rpx;
+    margin: 10rpx 0 4rpx;
+}
+
+.method-con .aniu-pic {
+    width: 100%;
+    margin-top: 10rpx;
+    margin-left: -20rpx;
+}
+
+.method-con .copy-zone .copy-txt {
+    color: #FD6907;
+    font-size: 26rpx;
+}
+
+.method-con .copy-zone .qrcode {
+    margin-top: 16rpx;
+    width: 273rpx;
+    box-shadow: 3rpx 3rpx 10rpx #eee,-3rpx -3rpx 10rpx #eee;
+}

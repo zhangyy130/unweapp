@@ -1,0 +1,2 @@
+<view class="loading" wx:if="{{!id}}"> 正在拼命加载数据中 </view>
+<web-view src="https://m.aniu.com.cn/xiaochengxu_web/dist/html/stock_detail.html?id={{id}}" wx:if="{{id}}"></web-view>

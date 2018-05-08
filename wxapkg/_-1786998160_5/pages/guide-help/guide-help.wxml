@@ -1,0 +1,19 @@
+<view class="guide-container">
+    <text class="main-title">关注公众号阿牛定投，可以开启一键定投</text>
+    <view class="method-con">
+        <text class="method-title">关注方法一：</text>
+        <text class="method-desc">手动搜索公众号「阿牛定投」并关注</text>
+        <view bindtap="copyName" class="copy-zone" data-name="阿牛定投">
+            <text class="copy-txt">点击这里复制公众号名称</text>
+            <image class="aniu-pic" mode="widthFix" src="/images/aniu.png"></image>
+        </view>
+    </view>
+    <view class="method-con">
+        <text class="method-title">关注方法二：</text>
+        <text class="method-desc">保存二维码图片，返回微信扫一扫从相册选取图片</text>
+        <view bindtap="savePic" class="copy-zone" data-url="images/showqrcode.jpeg">
+            <text class="copy-txt">点击这里保存二维码</text>
+            <image class="qrcode" mode="widthFix" src="/images/showqrcode.jpeg"></image>
+        </view>
+    </view>
+</view>

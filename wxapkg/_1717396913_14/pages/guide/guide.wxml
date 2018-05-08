@@ -1,0 +1,8 @@
+<view class="banner">
+    <image class="banner-pic" mode="widthFix" src="../../images/index/sunfang.jpg"></image>
+    <view class="msg">
+        <view>公众号对话回复“抄底”</view>
+        <view>获取秘笈</view>
+    </view>
+    <navigator class="invest-btn" openType="navigateBack">返回</navigator>
+</view>
